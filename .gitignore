@@ -1,0 +1,30 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env*
+!.env.example
+.env.local
+.env.*.local
+
+# Vercel & build artifacts
+.vercel
+.turbo
+
+# Private keys and certificates
+*.pem
+*.key
+*.crt
+*.cert
+*.pfx
+*.p12
+*.id_rsa
+*id_rsa*
+*.secret

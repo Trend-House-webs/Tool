@@ -1,0 +1,6 @@
+{
+  "name": "ToolNest",
+  "description": "Everyday Tools. One Simple Place. Fast, private online utility tools for images, files, calculations, student tasks, and everyday productivity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        try {
+          if (typeof window !== 'undefined') {
+            var _origFetch = window.fetch;
+            try {
+              Object.defineProperty(window, 'fetch', {
+                get: function() { return _origFetch; },
+                set: function(fn) { _origFetch = fn; },
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e) {}
+          }
+        } catch (err) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolNest — Everyday Tools. One Simple Place.</title>
+    <meta name="description" content="ToolNest provides fast, free online utility tools for images, files, calculations, student tasks, and everyday productivity. 100% private in-browser tools with zero sign-up." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="canonical" href="https://YOUR-NEW-DOMAIN.com/" />
+    <meta name="theme-color" content="#090D16" />
+    <meta property="og:site_name" content="ToolNest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR-NEW-DOMAIN.com/" />
+    <meta property="og:title" content="ToolNest — Everyday Tools. One Simple Place." />
+    <meta property="og:description" content="ToolNest provides fast, free online utility tools for images, files, calculations, student tasks, and everyday productivity. 100% private in-browser tools with zero sign-up." />
+    <meta property="og:image" content="https://YOUR-NEW-DOMAIN.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ToolNest — Everyday Tools. One Simple Place." />
+    <meta name="twitter:description" content="ToolNest provides fast, free online utility tools for images, files, calculations, student tasks, and everyday productivity. 100% private in-browser tools with zero sign-up." />
+    <meta name="twitter:image" content="https://YOUR-NEW-DOMAIN.com/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-emerald-100 selection:text-emerald-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

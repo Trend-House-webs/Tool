@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tn-brand-top" x1="12" y1="5" x2="36" y2="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="tn-brand-left" x1="7" y1="18" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="tn-brand-right" x1="24" y1="18" x2="41" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="tn-brand-core" x1="18" y1="18" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="tn-brand-glow" x="14" y="14" width="20" height="20" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <path d="M24 5 L40 14.5 L24 24 L8 14.5 Z" fill="url(#tn-brand-top)" />
+  <path d="M24 5 L40 14.5 L24 24 L8 14.5 Z" stroke="#A7F3D0" stroke-width="0.75" opacity="0.7" />
+  <path d="M8 14.5 L24 24 L24 43 L8 33.5 Z" fill="url(#tn-brand-left)" />
+  <path d="M24 24 L40 14.5 L40 33.5 L24 43 Z" fill="url(#tn-brand-right)" />
+  <path
+    d="M24 5 L40 14.5 L40 33.5 L24 43 L8 33.5 L8 14.5 Z"
+    stroke="#090D16"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+
+  <g filter="url(#tn-brand-glow)">
+    <polygon points="24,19 29,24 24,29 19,24" fill="url(#tn-brand-core)" stroke="#FFFFFF" stroke-width="0.75" />
+    <circle cx="24" cy="24" r="1.5" fill="#FFFFFF" />
+  </g>
+</svg>
